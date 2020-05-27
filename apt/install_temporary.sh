@@ -26,6 +26,8 @@ m_autoremove(){
                     ;;
             esac
         done
+    else
+        sudo apt autoremove -y
     fi
     echo "removed"
     echo "----------------------------------------"    
