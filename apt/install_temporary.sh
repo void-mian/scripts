@@ -59,6 +59,8 @@ m_install(){
     done
 }
 
+>&2 echo -e "\e[0;31mWARNING: Use apt install --mark-auto instead.\e[0;0m\n"
+
 if [ $# -le 0 ]; then
     m_error
 elif [ $1 == "install" ]; then
